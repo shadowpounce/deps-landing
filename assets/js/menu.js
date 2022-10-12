@@ -41,6 +41,7 @@ function openMenu() {
   headerButtonPrice.style.display = 'none'
   languageSwitcher.style.display = 'flex'
   languageSwitcher.style.margin = `0 0 0 auto`
+  document.querySelector('body').style.overflow = 'hidden'
   isOpen = true
 
   mobileMenuList.querySelectorAll('.list__item').forEach((item) =>
@@ -56,6 +57,7 @@ function closeMenu() {
   hamburgerButton.classList.remove('hamburger-opened-menu')
   headerButtonPrice.style.display = 'block'
   languageSwitcher.style.display = 'none'
+  document.querySelector('body').style.overflow = 'scroll'
   isOpen = false
 }
 

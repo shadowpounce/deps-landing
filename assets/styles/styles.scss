@@ -7,7 +7,6 @@ body {
   font-weight: 500;
   margin: 0;
   padding: 0;
-  overflow: none;
 }
 
 *,
@@ -170,7 +169,7 @@ a {
   overflow: none;
 
   .menu__list {
-    margin: 60px 0;
+    margin: 30px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -182,6 +181,10 @@ a {
       font-size: 16px;
       line-height: 150%;
       color: $main-color;
+
+      a {
+        color: $main-color;
+      }
     }
   }
 
