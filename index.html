@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/site.webmanifest" />
+    <title>Deps</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="hamburger">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 5H20"
+                stroke="#313647"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 12H20"
+                stroke="#313647"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 19H20"
+                stroke="#313647"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="logo">
+            <img src="./assets/image/logo.svg" alt="" />
+          </div>
+          <ul class="nav__list">
+            <li class="nav__link">
+              <a href="#solutions"> Решения </a>
+            </li>
+            <li class="nav__link">
+              <a href="#equipment"> Оборудование </a>
+            </li>
+            <li class="nav__link">
+              <a href="#realized-objects"> Реализованные обьекты </a>
+            </li>
+
+            <li class="nav__link">
+              <a href="#contacts"> Контакты </a>
+            </li>
+          </ul>
+          <div class="language-switcher">
+            <button class="active-language" id="ru">ru</button>
+            <div class="line"></div>
+            <button id="ua">ua</button>
+          </div>
+          <button class="btn-primary">Узнать цену</button>
+        </nav>
+      </div>
+    </header>
+
+    <menu class="mobile-menu">
+      <div class="container">
+        <ul class="menu__list">
+          <li class="list__item"><a href="#solutions">Решения</a></li>
+          <li class="list__item"><a href="#equipment">Оборудование</a></li>
+          <li class="list__item">
+            <a href="#realized-objects">Реализованные обьекты</a>
+          </li>
+          <li class="list__item"><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="menu__wrapper">
+          <div class="menu__contacts">
+            <div class="menu__contact">
+              <div class="contact__icon">
+                <img src="./assets/image/site.svg" alt="" />
+              </div>
+              <a href="Yevgen.Mykhaylov@deps.ua" class="contact">
+                Yevgen.Mykhaylov@deps.ua
+              </a>
+            </div>
+            <div class="menu__contact">
+              <div class="contact__icon">
+                <img src="./assets/image/phone.svg" alt="" />
+              </div>
+              <a href="tel:380676184407" class="contact">+380 67 618 44 07 </a>
+            </div>
+          </div>
+          <button class="btn-primary">Получить консультацию</button>
+        </div>
+      </div>
+    </menu>
+
+    <main role="main" class="main-content">
+      <section class="site-banner">
+        <img
+          src="./assets/image/s1-bg.png"
+          alt=""
+          class="site-banner__background"
+        />
+        <img
+          src="./assets/image/s1-bg-tablet.png"
+          alt=""
+          class="site-banner__background tablet"
+        />
+        <img
+          src="./assets/image/s1-bg-mobile.png"
+          alt=""
+          class="site-banner__background mobile"
+        />
+        <div class="container">
+          <div class="wrapper">
+            <h1 class="main__title">Парковочные решения</h1>
+            <span class="subtitle">для жилых комплексов</span>
+            <ul>
+              <li>
+                <img src="./assets/image/s1-1.svg" alt="" />
+                <span> Контроль проезда автомобилей </span>
+              </li>
+              <li>
+                <img src="./assets/image/s1-2.svg" alt="" />
+                <span> Безопасность на территории </span>
+              </li>
+              <li>
+                <img src="./assets/image/s1-3.svg" alt="" />
+                <span> Полная автоматизация проезда </span>
+              </li>
+            </ul>
+            <button class="btn-primary">Получить консультацию</button>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Если
+          </span>
+          <h2 class="section__title">Вы ищите решения:</h2>
+
+          <div class="questions-block">
+            <div id="question-1" class="question">
+              <div>
+                <div class="question-mark">
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.5"
+                      width="20"
+                      height="20"
+                      rx="10"
+                      fill="#EBFAE8"
+                    />
+                    <path
+                      d="M6.66675 7.16675C6.66675 6.50371 6.97404 5.86782 7.52102 5.39898C8.068 4.93014 8.80987 4.66675 9.58341 4.66675H10.4167C11.1903 4.66675 11.9322 4.93014 12.4791 5.39898C13.0261 5.86782 13.3334 6.50371 13.3334 7.16675C13.3641 7.70779 13.2182 8.24416 12.9176 8.69506C12.617 9.14596 12.178 9.48698 11.6667 9.66675C11.1555 9.90644 10.7165 10.3611 10.4159 10.9623C10.1153 11.5635 9.9694 12.2787 10.0001 13.0001"
+                      stroke="#009A44"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 16.3333V16.3416"
+                      stroke="#009A44"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Занята парковка автомобилями из соседних дворов
+              </div>
+              <img src="./assets/image/s2-p1.png" alt="" />
+            </div>
+            <div class="row">
+              <div id="question-2" class="question">
+                <div>
+                  <div class="question-mark">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.5"
+                        width="20"
+                        height="20"
+                        rx="10"
+                        fill="#EBFAE8"
+                      />
+                      <path
+                        d="M6.66675 7.16675C6.66675 6.50371 6.97404 5.86782 7.52102 5.39898C8.068 4.93014 8.80987 4.66675 9.58341 4.66675H10.4167C11.1903 4.66675 11.9322 4.93014 12.4791 5.39898C13.0261 5.86782 13.3334 6.50371 13.3334 7.16675C13.3641 7.70779 13.2182 8.24416 12.9176 8.69506C12.617 9.14596 12.178 9.48698 11.6667 9.66675C11.1555 9.90644 10.7165 10.3611 10.4159 10.9623C10.1153 11.5635 9.9694 12.2787 10.0001 13.0001"
+                        stroke="#009A44"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 16.3333V16.3416"
+                        stroke="#009A44"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  Какое парковочное решение будет оптимальным для вас
+                </div>
+                <img src="./assets/image/s2-p2.png" alt="" />
+              </div>
+              <div id="question-3" class="question">
+                <div>
+                  <div class="question-mark">
+                    <svg
+                      width="20"
+                      height="21"
+                      viewBox="0 0 20 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        y="0.5"
+                        width="20"
+                        height="20"
+                        rx="10"
+                        fill="#EBFAE8"
+                      />
+                      <path
+                        d="M6.66675 7.16675C6.66675 6.50371 6.97404 5.86782 7.52102 5.39898C8.068 4.93014 8.80987 4.66675 9.58341 4.66675H10.4167C11.1903 4.66675 11.9322 4.93014 12.4791 5.39898C13.0261 5.86782 13.3334 6.50371 13.3334 7.16675C13.3641 7.70779 13.2182 8.24416 12.9176 8.69506C12.617 9.14596 12.178 9.48698 11.6667 9.66675C11.1555 9.90644 10.7165 10.3611 10.4159 10.9623C10.1153 11.5635 9.9694 12.2787 10.0001 13.0001"
+                        stroke="#009A44"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M10 16.3333V16.3416"
+                        stroke="#009A44"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  Неопознанные авто на парковке
+                </div>
+                <img src="./assets/image/s2-p3.png" alt="" />
+              </div>
+            </div>
+            <div id="question-4" class="question">
+              <div>
+                <div class="question-mark">
+                  <svg
+                    width="20"
+                    height="21"
+                    viewBox="0 0 20 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      y="0.5"
+                      width="20"
+                      height="20"
+                      rx="10"
+                      fill="#EBFAE8"
+                    />
+                    <path
+                      d="M6.66675 7.16675C6.66675 6.50371 6.97404 5.86782 7.52102 5.39898C8.068 4.93014 8.80987 4.66675 9.58341 4.66675H10.4167C11.1903 4.66675 11.9322 4.93014 12.4791 5.39898C13.0261 5.86782 13.3334 6.50371 13.3334 7.16675C13.3641 7.70779 13.2182 8.24416 12.9176 8.69506C12.617 9.14596 12.178 9.48698 11.6667 9.66675C11.1555 9.90644 10.7165 10.3611 10.4159 10.9623C10.1153 11.5635 9.9694 12.2787 10.0001 13.0001"
+                      stroke="#009A44"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M10 16.3333V16.3416"
+                      stroke="#009A44"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+                Где найти комптентного и надежного подрядчика
+              </div>
+              <img src="./assets/image/s2-p4.png" alt="" />
+            </div>
+          </div>
+          <img
+            src="./assets/image/s2-bg-mobile.png"
+            alt=""
+            class="questions__picture-mobile"
+          />
+          <div class="section__fact">
+            <div class="line"></div>
+            <p>
+              Большинство (78,5%) представителей жилых комплексов не знают,
+              какое парковочное решение оптимально подойдет для их ЖК. И это
+              нормально, так как на рынке большой выбор парковочных решений,
+              которые могут предлагать недобросовестные подрядчики
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Вот почему
+          </span>
+          <h2 class="section__title">Выбирают нас:</h2>
+          <div class="benefits-row">
+            <div class="benefit">
+              <div class="wrap">
+                <div class="icon">
+                  <img src="./assets/image/s3-i1.svg" alt="" />
+                </div>
+                <div class="text-content">
+                  <h4 class="benefit__title">Индивидуально</h4>
+                  <p class="benefit__text">
+                    Широкий выбор решений под ваши необходимости
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="wrap">
+                <div class="icon">
+                  <img src="./assets/image/s3-i2.svg" alt="" />
+                </div>
+                <div class="text-content">
+                  <h4 class="benefit__title">Удобно</h4>
+                  <p class="benefit__text">Реализация проекта под ключ</p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="wrap">
+                <div class="icon">
+                  <img src="./assets/image/s3-i3.svg" alt="" />
+                </div>
+                <div class="text-content">
+                  <h4 class="benefit__title">Профессионально</h4>
+                  <p class="benefit__text">
+                    Выбор, установка, настройка и запуск парковки в вашем ЖК
+                    нашими опытными инженерами
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="benefit">
+              <div class="wrap">
+                <div class="icon">
+                  <img src="./assets/image/s3-i4.svg" alt="" />
+                </div>
+                <div class="text-content">
+                  <h4 class="benefit__title">Надёжно</h4>
+                  <p class="benefit__text">
+                    Гарантия на парковочную систему - 12 месяцев
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="solutions" id="solutions">
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Надёжные
+          </span>
+          <h2 class="section__title">Готовые решения</h2>
+
+          <div id="solution-1" class="solution">
+            <div class="solution__picture">
+              <img src="./assets/image/s4-sl1.png" alt="" />
+              <div class="ellipse">
+                <small>на базе</small>
+                <b>GSM</b>
+                <small>решения</small>
+              </div>
+            </div>
+            <div class="solution__text-content">
+              <h4 class="title">Комплект БАЗОВЫЙ</h4>
+              <p class="subtitle">
+                Проезд на территорию осуществляется при помощи телефонного
+                звонка (GSM)
+              </p>
+              <ul>
+                <li>Шлагбаум</li>
+                <li>Радар для обнаружения авто</li>
+                <li>Контроллер индукционной (магнитной)</li>
+                <li>Монтажный комплект</li>
+                <li><b>GSM - контроллер</b></li>
+              </ul>
+            </div>
+            <div class="solution__price">
+              <div class="price">
+                <span class="old-price"> от 1500$ </span>
+                <b>от 880$</b>
+                <span class="note"> *без учета стоимости работы </span>
+              </div>
+              <div class="btn-background">
+                <button class="btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__picture">
+              <img src="./assets/image/s4-sl2.png" alt="" />
+              <div class="ellipse">
+                <small>на базе</small>
+                <b>LPR</b>
+                <small>решения</small>
+              </div>
+            </div>
+            <div class="solution__text-content">
+              <h4 class="title">Комплект СТАНДАРТ</h4>
+              <p class="subtitle">
+                Проезд на территорию осуществляется при распознании
+                автомобильного номера в системе свой/чужой (LPR)
+              </p>
+              <ul>
+                <li>Шлагбаум</li>
+                <li>Радар для обнаружения авто</li>
+                <li>Контроллер индукционной (магнитной)</li>
+                <li>Монтажный комплект</li>
+                <li><b>IP-камера</b></li>
+                <li><b>POE Watchdog коммутатор</b></li>
+              </ul>
+            </div>
+            <div class="solution__price">
+              <div class="price">
+                <span class="old-price"> от 2100$ </span>
+                <b>от 1400$</b>
+                <span class="note"> *без учета стоимости работы </span>
+              </div>
+              <div class="btn-background">
+                <button class="btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solution">
+            <div class="solution__picture">
+              <img src="./assets/image/s4-sl3.png" alt="" />
+              <div class="ellipse">
+                <small>на базе</small>
+                <b>UHF</b>
+                <small>решения</small>
+              </div>
+            </div>
+            <div class="solution__text-content">
+              <h4 class="title">Комплект ПРОДВИНУТЫЙ</h4>
+              <p class="subtitle">
+                Проезд на территорию осуществляется при считывании специальной
+                метки расположенной на автомобиле (UHF)
+              </p>
+              <ul>
+                <li>Шлагбаум</li>
+                <li>Радар для обнаружения авто</li>
+                <li>Контроллер индукционной (магнитной)</li>
+                <li>Монтажный комплект</li>
+                <li><b>Сетевой контроллер доступа</b></li>
+                <li><b>UHF-считыватель уличный</b></li>
+                <li><b>Считыватель настольный UHF</b></li>
+                <li><b>Бесконтактные UHF метки </b></li>
+              </ul>
+            </div>
+            <div class="solution__price">
+              <div class="price">
+                <span class="old-price"> от 2400$ </span>
+                <b>от 1600$</b>
+                <span class="note"> *без учета стоимости работы </span>
+              </div>
+              <div class="btn-background">
+                <button class="btn-primary">Купить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="steps">
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Как мы работаем
+          </span>
+          <h2 class="section__title">Этапы работ</h2>
+          <div class="steps-row">
+            <div class="step">
+              <div class="ellipse">
+                <img src="./assets/image/s5-s1.svg" alt="" />
+                <div id="step-1" class="step__number">1</div>
+              </div>
+              <h4 class="title">
+                Оставляете <br />
+                запрос
+              </h4>
+              <p>Это бесплатно</p>
+              <div class="underline">
+                <img
+                  class="arrow"
+                  src="./assets/image/green-arrow.svg"
+                  alt=""
+                />
+                <div class="middle-line"></div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="ellipse">
+                <img src="./assets/image/s5-s2.svg" alt="" />
+                <div id="step-2" class="step__number">2</div>
+              </div>
+              <h4 class="title">Консультация с нашим специалистом</h4>
+              <p>Это тоже абсолютно бесплатно!</p>
+              <div class="underline" id="underline-2">
+                <img
+                  class="arrow"
+                  src="./assets/image/green-arrow.svg"
+                  alt=""
+                />
+                <div class="middle-line"></div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="ellipse">
+                <img src="./assets/image/s5-s3.svg" alt="" />
+                <div id="step-3" class="step__number">3</div>
+              </div>
+              <h4 class="title">
+                Монтаж <br />
+                оборудования
+              </h4>
+              <p>Зависит от стоимости расчета</p>
+              <div class="underline">
+                <img
+                  class="arrow"
+                  src="./assets/image/green-arrow.svg"
+                  alt=""
+                />
+                <div class="middle-line"></div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="ellipse">
+                <img src="./assets/image/s5-s4.svg" alt="" />
+                <div id="step-4" class="step__number">4</div>
+              </div>
+              <h4 class="title">
+                Комфортное <br />
+                использование
+              </h4>
+              <p>Это бесплатно</p>
+              <div class="underline">
+                <div class="middle-line"></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-primary">Выше вложенных средств</button>
+        </div>
+      </section>
+      <section class="equipment" id="equipment">
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Лучшее
+          </span>
+          <h2 class="section__title">Оборудование</h2>
+          <div class="equipment-layout">
+            <div class="equipment__item item-horizontal" id="item-1">
+              <div class="image">
+                <img src="./assets/image/s6-p1.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">BG1060</h4>
+                <p class="description">
+                  современный шлагбаум с интерактивной световой индикацией,
+                  высокоэффективный бесщеточный двигатель постоянного тока с
+                  ресурсом открытий не менее 3 000 000 циклов
+                </p>
+              </div>
+            </div>
+            <div class="equipment__item item-vertical" id="item-2">
+              <div class="image">
+                <img src="./assets/image/s6-p2.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">VR10</h4>
+                <p class="description">
+                  радар для обнаружения транспортных средств, который обезопасит
+                  проезд транспорта под стрелой.
+                </p>
+              </div>
+            </div>
+            <div class="equipment__item item-vertical" id="item-3">
+              <div class="image">
+                <img src="./assets/image/s6-p3.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">PSA02 + PSA03</h4>
+                <p class="description">
+                  петлевой детектор, служит для выезда любого транспорта из
+                  охраняемой территории
+                </p>
+              </div>
+            </div>
+            <div class="equipment__item item-horizontal" id="item-4">
+              <div class="image">
+                <img src="./assets/image/s6-p4.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">GSM-контроллер RC-4000</h4>
+                <p class="description">
+                  служит сердцем системы и позволяет осуществить заезд на
+                  территорию по нескольким сценариям
+                </p>
+              </div>
+            </div>
+            <div
+              class="equipment__item item-horizontal mobile-hidden"
+              id="item-5"
+            >
+              <div class="image">
+                <img src="./assets/image/s6-p5.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">DL-852Q28B-LP</h4>
+                <p class="description">
+                  камера которая способна распознать автомобильные номерные
+                  знаки и осуществить пропуск зарегистрированных автомобилей на
+                  контролируемую территорию. Управление базой данных номерных
+                  знаков осуществляется с WEB интерфейса устройства
+                </p>
+              </div>
+            </div>
+            <div
+              class="equipment__item item-vertical mobile-hidden"
+              id="item-6"
+            >
+              <div class="image">
+                <img src="./assets/image/s6-p6.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">Atlas 100</h4>
+                <p class="description">
+                  контроллер с WEB интерфейсом, которым можно управлять с любого
+                  устройства. Позволяет гибко настроить систему пропуска и
+                  сохраняет у себя на борту ключи и события происходящего
+                </p>
+              </div>
+            </div>
+            <div
+              class="equipment__item item-vertical mobile-hidden"
+              id="item-7"
+            >
+              <div class="image">
+                <img src="./assets/image/s6-p7.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">UHF-10E PRO</h4>
+                <p class="description">
+                  антенна с возможностью считывания ключей на расстоянии до 10
+                  метров. Позволит осуществлять допуск на объект без
+                  необходимости остановки транспортного средства.
+                </p>
+              </div>
+            </div>
+            <div
+              class="equipment__item item-horizontal mobile-hidden"
+              id="item-8"
+            >
+              <div class="image">
+                <img src="./assets/image/s6-p8.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">UR10RW-E</h4>
+                <p class="description">
+                  настольный регистратор ключей, который позволяет добавлять
+                  новых пользователей в систему не выходя из помещения
+                </p>
+              </div>
+            </div>
+            <div
+              class="equipment__item item-horizontal mobile-hidden"
+              id="item-9"
+            >
+              <div class="image">
+                <img src="./assets/image/s6-p9.png" alt="" />
+              </div>
+              <div class="text-content">
+                <h4 class="title">RFID Stick UHF</h4>
+                <p class="description">
+                  ключ-наклейка, которая крепится на лобовом стекле автомобиля
+                  для распознавания системой свой-чужой.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="show-more">
+            <span>Показать ещё</span>
+            <img src="./assets/image/arrow-shor-more.svg" alt="" />
+          </button>
+          <button class="btn-primary">Расчитать стоимость</button>
+        </div>
+      </section>
+      <section class="realized-objects" id="realized-objects">
+        <img
+          class="realized-objects__background"
+          src="./assets/image/s7-bg.png"
+          alt=""
+        />
+        <div class="container">
+          <span class="section__span">
+            <div class="line"></div>
+            Наши
+          </span>
+          <h2 class="section__title">Реализованные обьекты</h2>
+
+          <div class="slider">
+            <div class="slider__item">
+              <div class="image">
+                <img src="./assets/image/s7-p1.png" alt="" />
+                <div class="ellipse">UHF</div>
+              </div>
+              <h4 class="title">Жилой комплекс</h4>
+            </div>
+            <div class="slider__item">
+              <div class="image">
+                <img src="./assets/image/s7-p2.png" alt="" />
+                <div class="ellipse">UHF</div>
+              </div>
+              <h4 class="title">Частный детский сад</h4>
+            </div>
+            <div class="slider__item">
+              <div class="image">
+                <img src="./assets/image/s7-p3.png" alt="" />
+                <div class="ellipse">LPR</div>
+              </div>
+              <h4 class="title">Отельный комплекс</h4>
+            </div>
+            <div class="slider__item">
+              <div class="image">
+                <img src="./assets/image/s7-p2.png" alt="" />
+                <div class="ellipse">LPR</div>
+              </div>
+              <h4 class="title">Частный детский сад</h4>
+            </div>
+            <div class="slider__item">
+              <div class="image">
+                <img src="./assets/image/s7-p1.png" alt="" />
+                <div class="ellipse">UHF</div>
+              </div>
+              <h4 class="title">Жилой комплекс</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contacts-row contacts" id="contacts">
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/image/site.svg" alt="" />
+            </div>
+            <a href="yevgen.mykhaylov@deps.ua"> Yevgen.Mykhaylov@deps.ua </a>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/image/address.svg" alt="" />
+            </div>
+            <a href="yevgen.mykhaylov@deps.ua"
+              ><address>ул. Маричанская, 18, г. Киев, 03040, Украина</address>
+            </a>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/image/phone.svg" alt="" />
+            </div>
+            <a href="tel:380676184407"> +380 67 618 44 07 </a>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer__copir">
+          <div class="custom">
+            © 2022 DEPS. Все права защищены.
+            <a href=""
+              >Использование материалов с сайта — только с разрешения
+              администрации.</a
+            >
+            <br />
+            Цены указаны с учетом НДС. Сумма в долларах США является
+            ориентировочной и не является ценой товара. Оплата осуществляется в
+            грн по курсу на день оплаты.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./libs/jquery/jquery-3.6.1.min.js"></script>
+    <script src="./libs/slick/slick.min.js"></script>
+    <script src="./libs/slick/slick.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
