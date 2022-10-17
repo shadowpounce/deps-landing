@@ -173,7 +173,6 @@ a:visited {
 .mobile-menu {
   opacity: 0;
   transition: all 0.3s ease;
-  pointer-events: none;
   position: fixed;
   top: 54px;
   right: 0;
@@ -182,7 +181,7 @@ a:visited {
   background: #fff;
   z-index: 98;
   padding: 0 16px 16px 16px;
-  overflow: none;
+  overflow-y: scroll;
 }
 .mobile-menu .menu__list {
   margin: 30px 0;
