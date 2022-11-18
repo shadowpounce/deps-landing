@@ -36,6 +36,7 @@ function resetActiveClasses() {
 
 function openMenu() {
   mobileMenu.style.opacity = '1'
+  mobileMenu.style.zIndex = '99'
   mobileMenu.style.pointerEvents = 'all'
   hamburgerButton.classList.add('hamburger-opened-menu')
   headerButtonPrice.style.display = 'none'
@@ -53,6 +54,7 @@ function openMenu() {
 
 function closeMenu() {
   mobileMenu.style.opacity = '0'
+  mobileMenu.style.zIndex = '-1'
   mobileMenu.style.pointerEvents = 'none'
   hamburgerButton.classList.remove('hamburger-opened-menu')
   headerButtonPrice.style.display = 'block'
